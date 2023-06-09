@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
 
     def index
         @title = 'デイトラ'
-        @article = Article.first
+        @articles = Article.all
     end
-    
+
 end
