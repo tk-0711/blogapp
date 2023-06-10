@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'articles#index'
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :articles, only: [:show]
 end
 
 # 端的に言うと、個々の部分でURLを作るところ
