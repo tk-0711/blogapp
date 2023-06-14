@@ -5,6 +5,8 @@ ruby "2.7.7"
 
 gem "webpacker"
 
+gem "bootstrap"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "6.0.2.1"
 
@@ -24,7 +26,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+# gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
