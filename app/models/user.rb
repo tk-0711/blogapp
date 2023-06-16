@@ -25,6 +25,10 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
 
   def has_written?(article)
-    articles.exist?(id: article.id)
+    articles.exists?(id: article.id)
+  end
+
+  def display_name
+    self.email.split('@').first
   end
 end
