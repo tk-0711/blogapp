@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments, only: [:new, :create]
   end
+
+  resource :profile, only: [:show, :edit, :update]
 end
 
 # 端的に言うと、個々の部分でURLを作るところ
