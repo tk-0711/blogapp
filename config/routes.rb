@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   resource :profile, only: [:show, :edit, :update]
+  resources :favorites, only: [:index]
 end
 
 # 端的に言うと、個々の部分でURLを作るところ
